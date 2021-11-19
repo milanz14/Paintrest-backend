@@ -3,7 +3,7 @@
 const express = require('express');
 const app = require('../app');
 const { BadRequestError } = require('../expressError');
-const Posts = require('../models/Posts');
+const Posts = require('../models/posts');
 
 const router = express.Router({ mergeParams: true });
 
