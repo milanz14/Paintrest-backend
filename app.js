@@ -25,6 +25,9 @@ app.use('/user', userRoutes);
 app.use('/posts', postRoutes);
 app.use('/auth', authRoutes);
 
+app.get('/', (req, res) => {
+  res.send('App Working');
+});
 app.use(function (req, res, next) {
   console.log('***********************************');
   return next(new NotFoundError());
