@@ -5,7 +5,7 @@ require('dotenv').config();
 const SECRET_KEY =
   process.env.SECRET_KEY || 'asldfjlKJSDF0897F__)(*&_0798_)(*:KLJD';
 
-const BCRYPT_WORK_FACTOR = 12;
+const BCRYPT_WORK_FACTOR = process.env.BCRYPT_WORK_FACTOR || 12;
 
 const PORT = process.env.PORT || 3001;
 
