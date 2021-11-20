@@ -13,3 +13,4 @@ CREATE TABLE posts (
   created_at TIMESTAMP DEFAULT NOW(),
   username VARCHAR(255) NOT NULL REFERENCES users on DELETE CASCADE
 );
+
