@@ -8,26 +8,24 @@ const router = express.Router({ mergeParams: true });
 
 // returns { user: {userInfo}, posts: [list_of_posts_data] }
 router.get('/account/:username', loggedInAndUser, async (req, res, next) => {
-  try {
-    const { username } = req.params;
-
-    console.log(`Username = ${username}`);
-    const userInfo = await User.getUserAndPosts(username);
-    return res.status(201).json(userInfo);
-  } catch (err) {
-    next(err);
-  }
+    try {
+        const { username } = req.params;
+        const userInfo = await User.getUserAndPosts(username);
+        return res.status(201).json(userInfo);
+    } catch (err) {
+        next(err);
+    }
 });
 
 router.get('/:username', async (req, res, next) => {
-  try {
-    const { username } = req.params;
-    const userPosts = await User.getUserPosts(username);
+    try {
+        const { username } = req.params;
+        const userPosts = await User.getUserPosts(username);
 
-    return res.status(201).json({ userPosts });
-  } catch (err) {
-    next(err);
-  }
+        return res.status(201).json({ userPosts });
+    } catch (err) {
+        next(err);
+    }
 });
 
 module.exports = router;
