@@ -5,15 +5,14 @@ const { SECRET_KEY } = require('../config');
 const { UnauthorizedError } = require('../expressError');
 
 // JWT is being validated on every single request
-function authenticateJWT(req, res, next) {
+async function authenticateJWT(req, res, next) {
     try {
         // jwt.verify(token, SECRET_KEY) --> token = entire jwt Token
         // returns whatever is stored in the payload
         // This will return error if invalid
-        const payload = jwt.verify(
-            req.body._token || req.headers.authorization.split(' ')[1],
-            SECRET_KEY
-        );
+        console.log('+-+-+-+-+-+-+-+-+-+-');
+        console.log(req.body);
+        const payload = await jwt.verify(req.body._token, SECRET_KEY);
         req.user = payload;
         console.log('you have a valid token');
         return next();
@@ -34,6 +33,8 @@ function ensureLoggedIn(req, res, next) {
 
 function loggedInAndUser(req, res, next) {
     console.log(req.user);
+    console.log('*-/-*/-*/-*/-*/-*/-*/-*/-*/');
+    console.log(req.params);
     try {
         if (!req.user) throw new UnauthorizedError();
         if (req.user.username !== req.params.username) {
