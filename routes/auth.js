@@ -21,6 +21,7 @@ router.post('/register', async (req, res, next) => {
     let token = jwt.sign({ username }, SECRET_KEY);
     return res.json({
       message: `User ${username} successfully created`,
+      user: username,
       token,
     });
   } catch (err) {
@@ -41,7 +42,7 @@ router.post('/login', async (req, res, next) => {
 
     if (success) {
       const token = jwt.sign({ username }, SECRET_KEY);
-      return res.json({ message: 'Logged In', token });
+      return res.json({ message: `Logged In as ${username}`, username, token });
     } else {
       throw new ExpressError('Invalid password', 400);
     }
