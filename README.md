@@ -33,3 +33,5 @@ Seed Database<br>
 
 Launch App<br>
 `npm start`
+
+API should be running at http://localhost:3001
