@@ -10,8 +10,6 @@ async function authenticateJWT(req, res, next) {
         // jwt.verify(token, SECRET_KEY) --> token = entire jwt Token
         // returns whatever is stored in the payload
         // This will return error if invalid
-        console.log('+-+-+-+-+-+-+-+-+-+-');
-        console.log(req.body);
         const payload = await jwt.verify(req.body._token, SECRET_KEY);
         req.user = payload;
         console.log('you have a valid token');
