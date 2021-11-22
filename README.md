@@ -4,7 +4,9 @@ This project was created for a MintBeam hackathon competition. Contestants were 
 
 ## Reference Links
 
--   Developers: https://github.com/milanz14 & https://github.com/landen1221
+-   Matthew Landen (Developer): [Github] (https://github.com/landen1221) [Portfolio] (https://www.mattlanden.com/)
+-   Milan Zagorac (Developer): [Github] https://github.com/milanz14 [Portfolio] (https://www.milanz.dev/)
+
 -   Front-end Code Base: https://github.com/milanz14/Paintrest
 -   Live site: https://milanz14.github.io/Paintrest
 
