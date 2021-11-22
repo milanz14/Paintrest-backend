@@ -6,7 +6,7 @@ This project was created for a MintBeam hackathon competition. Contestants were 
 
 -   Developers: https://github.com/milanz14 & https://github.com/landen1221
 -   Front-end Code Base: https://github.com/milanz14/Paintrest
--   Live site: https://milanz14.github.io/Paintrest
+-   Live site: https://paintrest.surge.sh/
 
 ## Technology Utilized
 
