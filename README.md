@@ -8,7 +8,7 @@ This project was created for a MintBeam hackathon competition. Contestants were 
 -   Milan Zagorac (Developer): [Github] https://github.com/milanz14 [Portfolio] (https://www.milanz.dev/)
 
 -   Front-end Code Base: https://github.com/milanz14/Paintrest
--   Live site: https://milanz14.github.io/Paintrest
+-   Live site: https://paintrest.surge.sh/
 
 ## Technology Utilized
 
