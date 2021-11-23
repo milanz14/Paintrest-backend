@@ -1,6 +1,6 @@
 # Paintrest-backend
 
-This project was created for a MintBeam hackathon competition. Contestants were given 1-week to create an application that allowed for users to draw on a canvas. Then it was up to us to take that idea and make something with it. -- Enjoy!
+This project was created for a MintBean hackathon competition. Contestants were given 1-week to create an application that allowed for users to draw on a canvas. Then it was up to us to take that idea and make something with it. -- Enjoy!
 
 ## Reference Links
 
